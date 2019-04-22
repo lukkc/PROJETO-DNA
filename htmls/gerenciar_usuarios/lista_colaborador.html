@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+    <link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+    <!-- FOLHA DE ESTILO DO MENU -->
+    <link rel="stylesheet" href="../../css/compartilhado/menu.css">
+    <!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOG IN -->
+    <link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_in.css">
+    <!-- FOLHA DE ESTILO DA LISTA-TABLE -->
+    <link rel="stylesheet" href="../../css/compartilhado/lista.css">
+    <!-- FOLHA DE ESTILO DO MODAL -->
+    <link rel="stylesheet" href="../../css/compartilhado/modal.css">
+    <!-- FOLHA DE ESTILO PARTICULAR DE LISTA DE USUARIOS -->
+    <link rel="stylesheet" href="../../css/gerenciar_usuario/lista_colaborador.css">
+    <!-- FOLHA DE ESTILO DOS ICONS -->
+    <link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+    <!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <!-- SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO -->
+    <header class="cabecalho">
+      <div class="logotipo">
+        <img src="../../img/dna.png" alt="">
+        <h1>DNA</h1>
+      </div>
+      <div class="usuario-logado">
+        <h2>Usuário:&nbsp;</h2>
+        <h2>Lucas alves</h2>
+      </div>
+      <div class="div-btn-sair">
+        <a href="#" class="btn-sair">Sair&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
+    </header>
+
+    <!-- SEÇÃO PARTICULAR DA LISTA DE USUÁRIOS-->
+    <section class="gerenciar">
+      <nav class="menu-toggle">
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <div class="menu">
+          <div class="title-menu">
+            <h3>Menu</h3>
+          </div>
+          <ul>
+            <li>
+              <h3>Gerenciar Usuário</h3>
+              <ul>
+                <li><a class="" href="cadastrar_colaborador.html">Novo Usuário</a></li>
+                <li><a class="active" href="lista_colaborador.html">Relação de Usuários</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Agendamentos</h3>
+              <ul>
+                <li><a class="" href="novo_agendamento.html">Novo Agendamento</a></li>
+                <li><a class="" href="lista_agendamento.html">Relação de Agendamentos</a></li>
+                <li><a class="" href="agendamento_cancelado.html">Agendamentos Cancelados</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Exames</h3>
+              <ul>
+                <li><a class="" href="relacao_exames.html">Relação de Exames</a></li>
+                <li><a class="" href="relacao_exames_emitidos.html">Relação de Exames Emitidos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CONTENT DA SEÇÃO GERENCIAR -->
+      <div class="body-gerenciar">
+
+        <!-- TITULO DA SEÇÃO -->
+        <div class="title">
+          <h3>Relação de Usuário</h3>
+        </div>
+
+
+        <div id="lista-colaborador" class="lista-table">
+
+          <!-- BARRA PARA PESQUISAR -->
+          <div class="pesquisar">
+            <div class="">
+              <label for="">Matricula:</label>
+              <input id="searchMatricula" type="search" name="" value="" placeholder="Procucar por matrícula">
+            </div>
+            <div class="">
+              <label for="">Nome Usuário:</label>
+              <input id="searchNome" type="search" name="" value="" placeholder="Procurar por nome de usuário">
+            </div>
+          </div>
+
+
+          <div id="table" class="">
+            <table>
+              <tr>
+                <th>Matrícula</th>
+                <th>Nome</th>
+                <th>Setor</th>
+                <th>Comarca</th>
+                <th class="acoes">Editar</th>
+                <th class="acoes">Excluir</th>
+              </tr>
+
+              <tr>
+                <td>matricula</td>
+                <td>lucas laves de caldas asdasd adsd sd asda sd asa </td>
+                <td>setorasdas</td>
+                <td>comarcaasdasd</td>
+                <td class="acoes"><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td class="acoes"><a class="btn-excluir"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL PARA ALERTA DE EXCLUSÃO DE USUÁRIO -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content width-30">
+        <div class="modal-header">
+          <span class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+        </div>
+        <div class="modal-body">
+          <p class="default">Deseja mesmo excluir?</p>
+          <div class=" btns-excluir-usuario">
+            <button type="button" name="button">Sim</button>
+            <button type="button" name="button" class="close" >Não</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- LINK PARA JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- LINK PARA JAVASCRIPT DO MODAL -->
+    <script src="../../js/modal.js"></script>
+    <!-- LINK PARA JAVASCRIPT PARTICULAR DE CADASTRAR USUARIO -->
+    <script src="../../js/lista_usuarios.js"></script>
+
+  </body>
+
+</html>

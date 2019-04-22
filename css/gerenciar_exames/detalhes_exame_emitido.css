@@ -1,0 +1,99 @@
+.detalhes{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  height: 100%;
+  min-height: 900px;
+  position: relative;
+  padding: 20px 40px;
+  margin-top: 1px;
+  border:1px solid #d3d3d3;
+  background-color: #273f57;
+}
+
+.detalhes > ul{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #ebebeb;
+}
+
+.detalhes > ul > li{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  width: 100%;
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.detalhes > ul > li > h3{
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 20px;
+  background-color: #273f57;
+  border-radius: 3px;
+}
+
+.detalhes > ul > li > ul{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  width: 100%;
+  padding: 20px 60px;
+}
+
+.detalhes > ul > li > ul > li{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  min-height: 35px;
+}
+
+.detalhes > ul > li > ul > li > h4{
+  font-size: 15px;
+  color: #273f57;
+}
+
+.detalhes > ul > li > ul > li > p{
+  margin-left: 10px;
+  font-size: 15px;
+  color: #b95244;
+}
+
+.detalhes > ul > li > ul > li > p.sucess{
+  color: #3a8a17;
+}
+
+.detalhes > ul > li > ul > li > p.warning{
+  color: #968a19;
+}

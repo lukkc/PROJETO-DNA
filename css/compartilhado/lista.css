@@ -1,0 +1,70 @@
+#lista-agendamento,
+#lista-agendamento  table,
+#lista-colaborador  table{
+  margin-top: 35px;
+}
+
+#lista-colaborador  table{
+  margin-top: 35px;
+}
+
+.lista-table {
+  width: calc(100% + 2px);
+  height: 100%;
+  margin-left: -2px;
+}
+
+.lista-table table {
+    width: 100%;
+    padding-bottom: 70px;
+    overflow: auto;
+}
+
+.lista-table table tr {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.lista-table table tr.ok {
+    background-color: rgba(194, 255, 200, 0.25);
+}
+
+.lista-table td, th {
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.lista-table th {
+    background-color: #ebebeb;
+    color: #273f57;
+    border: 1px solid #cfcfcf;
+    border-bottom: 5px solid #273f57;
+}
+
+.acoes {
+    width: 60px;
+}
+
+.lista-table td,
+.lista-table a {
+    color: #000;
+}
+
+.lista-table .fa-pencil-square-o {
+    color: #c2a802;
+    cursor: pointer;
+}
+
+.lista-table .fa-trash-o,
+.lista-table .fa-times {
+    color: #d20d0d;
+    cursor: pointer;
+}
+
+.lista-table .fa-print {
+  color: #498c3c;
+}
+
+.lista-table .fa-eye {
+  color: #7d4f66
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+    <link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+    <!-- FOLHA DE ESTILO DO MODAL  -->
+    <link rel="stylesheet" href="../../css/compartilhado/modal.css">
+    <!-- FOLHA DE ESTILO DO MENU -->
+    <link rel="stylesheet" href="../../css/compartilhado/menu.css">
+    <!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOG IN -->
+    <link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_in.css">
+    <!-- FOLHA DE ESTILO DA TABLE -->
+    <link rel="stylesheet" href="../../css/compartilhado/lista.css">
+    <!-- FOLHA DE ESTILO PARTICULAR DE RELAÇÃO DE EXAMES -->
+    <link rel="stylesheet" href="../../css/gerenciar_exames/relacao_exames.css">
+    <!-- FOLHA DE ESTILO DO CALENDARIO -->
+    <link rel="stylesheet" href="../../css/compartilhado/calendario.css">
+    <!-- FOLHA DE ESTILO DOS ICONS -->
+    <link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+    <!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO -->
+    <header class="cabecalho">
+      <div class="logotipo">
+        <img src="../../img/dna.png" alt="">
+        <h1>DNA</h1>
+      </div>
+      <div class="usuario-logado">
+        <h2>Usuário:&nbsp;</h2>
+        <h2>Lucas alves</h2>
+      </div>
+      <div class="div-btn-sair">
+        <a href="#" class="btn-sair">Sair&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
+    </header>
+
+    <!-- SEÇÃO PARTICULAR DA RELAÇÃO DE EXAMES-->
+    <section class="gerenciar">
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="menu-toggle">
+        <div class="menu">
+          <div class="title-menu">
+            <h3>Menu</h3>
+          </div>
+          <ul>
+            <li>
+              <h3>Gerenciar Usuário</h3>
+              <ul>
+                <li><a class="" href="cadastrar_colaborador.html">Novo Usuário</a></li>
+                <li><a class="" href="lista_colaborador.html">Relação de Usuários</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Agendamentos</h3>
+              <ul>
+                <li><a class="" href="novo_agendamento.html">Novo Agendamento</a></li>
+                <li><a class="" href="lista_agendamento.html">Relação de Agendamentos</a></li>
+                <li><a class="" href="agendamento_cancelado.html">Agendamentos Cancelados</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Exames</h3>
+              <ul>
+                <li><a class="active" href="relacao_exames.html">Relação de Exames</a></li>
+                <li><a class="" href="relacao_exames_emitidos.html">Relação de Exames Emitidos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+
+      <!-- CONTENT DA SEÇÃO GERENCIAR -->
+      <div class="body-gerenciar">
+
+        <div class="title">
+          <h3>Relação de Exames</h3>
+        </div>
+
+        <!-- CALENDARIO -->
+        <div class="calendario-info">
+          <div class="calendario">
+            <div class="header-calendario">
+              <h3>Calendario</h3>
+              <div class="mes_ano">
+                <select id="mes">
+                  <option value="0" selected></option>
+                  <option value="-1">Janeiro</option>
+                  <option value="0">Fevereiro</option>
+                  <option value="1">Março</option>
+                  <option value="2">Abril</option>
+                  <option value="3">Maio</option>
+                  <option value="4">Junho</option>
+                  <option value="5">Julho</option>
+                  <option value="6">Agosto</option>
+                  <option value="7">Setembro</option>
+                  <option value="8">Outubro</option>
+                  <option value="9">Novembro</option>
+                  <option value="10">Dezembro</option>
+                </select>
+                <input id="ano" type="number" name="" value="">
+              </div>
+
+            </div>
+            <div class="body-calendario">
+              <table id="table-calendario" class="table-calendario">
+
+              </table>
+            </div>
+
+            <div class="footer-calendario">
+              <button id="btn-calendario" type="button" name="button"><i class='fa fa-chevron-down' aria-hidden='true'></i></button>
+            </div>
+          </div>
+          <div class="info-dia">
+            <div class="header-info-dia">
+              <h3>Informação Agendamento</h3>
+            </div>
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- LISTA-TABLE COM OS AGENDAMENTOS -->
+        <div id="lista-agendamento" class="lista-table">
+
+          <!-- BARRA DE PESQUISA -->
+          <div class="pesquisar">
+            <div class="">
+              <label for="">Data:</label>
+              <input id="searchData" type="search" name="" value="" placeholder="Procurar por data">
+            </div>
+            <div class="">
+              <label for="">Nome Genitora:</label>
+              <input id="searchNome" type="search" name="" value="" placeholder="Procurar por nome da genitora">
+            </div>
+          </div>
+          <table>
+            <tr>
+              <th>Nº Processo</th>
+              <th>Data</th>
+              <th>Nome Genitora</th>
+              <th class="acoes">Imprimir</th>
+              <th class="acoes">Detalhes</th>
+              <th class="acoes">OK</th>
+              <th class="acoes">Emitir</th>
+            </tr>
+
+            <tr>
+              <td>123123321</td>
+              <td>14/03/1994</td>
+              <td>maria da silva pereira rosa dos santos</td>
+              <td class="acoes"><a href=""><i class="fa fa-print" aria-hidden="true"></i></a></td>
+              <td class="acoes"><a href="detalhes_exame.html"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+              <td class="acoes"><a href=""><input type="checkbox" name="ok" value="" ></a></td>
+              <td class='acoes'><a class="btn-emitir"><i class='fa fa-arrow-right' aria-hidden='true'></i></a></td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODAL PRA ALERTA DE EXAME EMITIDO  -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content width-30">
+        <div class="modal-header">
+          <span class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+        </div>
+        <div class="modal-body">
+          <p>Exame emitido com sucesso.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- LINK PARA JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- LINK PARA JAVASCRIPT DO MODAL -->
+    <script type="text/javascript" src="../../js/modal.js"></script>
+    <!-- LINK PARA JAVASCRIPT DO CALENDARIO -->
+    <script src="../../js/calendario.js"></script>
+    <!-- LINK PARA JAVASCRIPT PARTICULAR DE RELAÇÃO DE EXAMES -->
+    <script src="../../js/relacao_exames.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+    <link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+    <!-- FOLHA DE ESTILO DO MENU -->
+    <link rel="stylesheet" href="../../css/compartilhado/menu.css">
+    <!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOG IN -->
+    <link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_in.css">
+    <!-- FOLHA DE ESTILO PARTICULAR DE DETALHES DE EXAME -->
+    <link rel="stylesheet" href="../../css/gerenciar_exames/detalhes_exame.css">
+    <!-- FOLHA DE ESTILO DOS ICONS -->
+    <link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+    <!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO -->
+    <header class="cabecalho">
+      <div class="logotipo">
+        <img src="../../img/dna.png" alt="">
+        <h1>DNA</h1>
+      </div>
+      <div class="usuario-logado">
+        <h2>Usuário:&nbsp;</h2>
+        <h2>Lucas alves</h2>
+      </div>
+      <div class="div-btn-sair">
+        <a href="#" class="btn-sair">Sair&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
+    </header>
+
+    <!-- SEÇÃO PARTICULAR DA DETALHES DE EXAME-->
+    <section class="gerenciar">
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="menu-toggle">
+        <div class="menu">
+          <div class="title-menu">
+            <h3>Menu</h3>
+          </div>
+          <ul>
+            <li>
+              <h3>Gerenciar Usuário</h3>
+              <ul>
+                <li><a class="" href="cadastrar_colaborador.html">Novo Usuário</a></li>
+                <li><a class="" href="lista_colaborador.html">Relação de Usuários</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Agendamentos</h3>
+              <ul>
+                <li><a class="" href="novo_agendamento.html">Novo Agendamento</a></li>
+                <li><a class="" href="lista_agendamento.html">Relação de Agendamentos</a></li>
+                <li><a class="" href="agendamento_cancelado.html">Agendamentos Cancelados</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Exames</h3>
+              <ul>
+                <li><a class="active" href="relacao_exames.html">Relação de Exames</a></li>
+                <li><a class="" href="relacao_exames_emitidos.html">Relação de Exames Emitidos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+
+      <!-- CONTENT DA SEÇÃO GERENCIAR -->
+      <div class="body-gerenciar">
+
+        <!-- TITULO DA SEÇÃO -->
+        <div class="title">
+          <h3>Detalhes de Exame</h3>
+        </div>
+
+        <!-- DETALHES EXAME -->
+        <div class="detalhes">
+          <ul>
+            <li><h3>Informações do Exame</h3>
+                <ul>
+                  <li><h4>Número do Processo:</h4><p>12312312123</p></li>
+                  <li><h4>ID do Agendamento:</h4><p>456456456</p></li>
+                  <li><h4>Número do Processo:</h4><p>12312312123</p></li>
+                  <li><h4>Agendado Por:</h4><p>Jose henrique coelho </p></li>
+                  <li><h4>Data de Exame:</h4><p>14/03/1996 </p></li>
+                  <li><h4>Horário:</h4><p>14:02:00</p></li>
+                  <li><h4>Status Exame :</h4><p class="sucess">Concluído</p></li>
+                  <li><h4>Emissão:</h4><p class="warning">Aguardando..</p></li>
+                </ul>
+            </li>
+            <li><h3>Informações da Genitora</h3>
+              <ul>
+                <li><h4>Nome da Genitora:</h4><p>Maria Francisca do Nascimento</p></li>
+                <li><h4>RG da Genitora:</h4><p>4.566.456</p></li>
+                <li><h4>Certidão de Nascimento:</h4><p>12312312123</p></li>
+                <li><h4>Cidade / Município:</h4><p> João Pessoa </p></li>
+              </ul>
+            </li>
+            <li><h3>Informações do Suposto Pai ou Representante</h3>
+              <ul>
+                <li><h4>Opcao Repre:</h4><p>Suposto pai</p></li>
+                <li><h4>Nome do Suposto Pai ou Representante:</h4><p>Pedro de Lima Moreira</p></li>
+                <li><h4>RG Suposto Pai ou Representante:</h4><p>12.312.312</p></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- LINK PARA JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </body>
+
+</html>

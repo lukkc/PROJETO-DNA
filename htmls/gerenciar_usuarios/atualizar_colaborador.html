@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+
+    <!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+    <link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+    <!-- FOLHA DE ESTILO DO MENU -->
+    <link rel="stylesheet" href="../../css/compartilhado/menu.css">
+    <!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOG IN -->
+    <link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_in.css">
+    <!-- FOLHA DE ESTILO DO MODAL -->
+    <link rel="stylesheet" href="../../css/compartilhado/modal.css">
+    <!-- FOLHA DE ESTILO PARTICULAR DE ATUALIZAR USUARIO -->
+    <link rel="stylesheet" href="../../css/gerenciar_usuario/atualizar_colaborador.css">
+    <!-- FOLHA DE ESTILO DOS ICONS -->
+    <link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+    <!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO -->
+    <header class="cabecalho">
+      <div class="logotipo">
+        <img src="../../img/dna.png" alt="">
+        <h1>DNA</h1>
+      </div>
+      <div class="usuario-logado">
+        <h2>Usuário:&nbsp;</h2>
+        <h2>Lucas alves</h2>
+      </div>
+      <div class="div-btn-sair">
+        <a href="#" class="btn-sair">Sair&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
+    </header>
+
+    <!-- SEÇÃO PARTICULAR DE ATUALIZAR USUÁRIO-->
+    <section class="gerenciar">
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="menu-toggle">
+        <div class="menu">
+          <div class="title-menu">
+            <h3>Menu</h3>
+          </div>
+          <ul>
+            <li>
+              <h3>Gerenciar Usuário</h3>
+              <ul>
+                <li><a class="" href="cadastrar_colaborador.html">Novo Usuário</a></li>
+                <li><a class="active" href="lista_colaborador.html">Relação de Usuários</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Agendamentos</h3>
+              <ul>
+                <li><a class="" href="novo_agendamento.html">Novo Agendamento</a></li>
+                <li><a class="" href="lista_agendamento.html">Relação de Agendamentos</a></li>
+                <li><a class="" href="agendamento_cancelado.html">Agendamentos Cancelados</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Exames</h3>
+              <ul>
+                <li><a class="" href="relacao_exames.html">Relação de Exames</a></li>
+                <li><a class="" href="relacao_exames_emitidos.html">Relação de Exames Emitidos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CONTENT DA SEÇÃO GERENCIAR -->
+      <div class="body-gerenciar">
+
+        <!-- TITULO DA SEÇÃO -->
+        <div class="title">
+          <h3>Atualizar Usuário</h3>
+        </div>
+
+
+        <div class="form-atualizar">
+          <form id="form" class="" action="" method="post">
+            <div class="group-input2">
+              <div class="group-input width-75">
+                <label for="Nome">Nome completo</label>
+                <input type="text" name="nome" value="" maxlength="30">
+              </div>
+              <div class="group-input width-20">
+                <label for="Matricula">Matrícula</label>
+                <input type="text" name="matricula" value="" maxlength="10">
+              </div>
+            </div>
+            <div class="group-input2">
+              <div class="group-input width-20">
+                <label for="CPF">CPF</label>
+                <input type="text" name="cpf" value="" maxlength="14">
+              </div>
+              <div class="group-input width-20">
+                <label for="Setor">Setor</label>
+                <input type="text" name="setor" value="" maxlength="25">
+              </div>
+              <div class="group-input width-25">
+                <label for="comarca">Comarca</label>
+                <input type="text" name="comarca" value="" maxlength="25">
+              </div>
+
+              <div class="group-input width-15">
+                <label for="">Administrador</label>
+                <select class="" name="data">
+                  <option value="">Sim</option>
+                  <option value="">Não</option>
+                </select>
+              </div>
+
+              <div class="group-input width-10">
+                <label for="">Ativo</label>
+                <select class="" name="data">
+                  <option value="">Sim</option>
+                  <option value="">Não</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="group-input2">
+
+              <div class="group-input width-60">
+                <label for="Email">E-mail</label>
+                <input type="email" name="email" value="" maxlength="60">
+              </div>
+
+              <div class="group-input width-35">
+                <label for="Login">Login</label>
+                <input type="text" name="username" value="" maxlength="30">
+              </div>
+
+            </div>
+            <div class="group-button">
+              <button class="btn-submit btn-atualizar" type="button" name="atualizar">Atualizar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODAL PARA ALERTA DE ATUALIZADO -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content width-40">
+        <div class="modal-header">
+          <span class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+        </div>
+        <div class="modal-body">
+          <p>Atualizado com Sucesso</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- LINK PARA JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- LINK PARA JAVASCRIPT DO MODAL -->
+    <script src="../../js/modal.js"></script>
+    <!-- LINK PARA JAVASCRIPT PARTICULAR DE ATUALIZAR USUARIO -->
+    <script src="../../js/atualizar_usuario.js"></script>
+    <!-- LINK PARA JAVASCRIPT DE VALIDAÇÃO DOS INPUTS -->
+    <script type="text/javascript" src="js/validacaoInputs.js"></script>
+
+
+  </body>
+
+</html>

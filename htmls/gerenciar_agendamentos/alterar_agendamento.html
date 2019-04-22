@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+    <link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+    <!-- FOLHA DE ESTILO DO MODAL  -->
+    <link rel="stylesheet" href="../../css/compartilhado/modal.css">
+    <!-- FOLHA DE ESTILO DO MENU -->
+    <link rel="stylesheet" href="../../css/compartilhado/menu.css">
+    <!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOG IN -->
+    <link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_in.css">
+    <!-- FOLHA DE ESTILO PARTICULAR DE ALTERAR AGENDAMENTO -->
+    <link rel="stylesheet" href="../../css/gerenciar_agendamento/alterar_agendamento.css">
+    <!-- FOLHA DE ESTILO DO CALENDARIO -->
+    <link rel="stylesheet" href="../../css/compartilhado/calendario.css">
+    <!-- FOLHA DE ESTILO DOS ICONS -->
+    <link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+    <!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO -->
+    <header class="cabecalho">
+      <div class="logotipo">
+        <img src="../../img/dna.png" alt="">
+        <h1>DNA</h1>
+      </div>
+      <div class="usuario-logado">
+        <h2>Usuário:&nbsp;</h2>
+        <h2>Lucas alves</h2>
+      </div>
+      <div class="div-btn-sair">
+        <a href="#" class="btn-sair">Sair&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
+    </header>
+
+
+    <!-- SEÇÃO PARTICULAR DE ALTERAR AGENDAMENTO -->
+    <section class="gerenciar">
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="menu-toggle">
+        <div class="menu">
+          <div class="title-menu">
+            <h3>Menu</h3>
+          </div>
+          <ul>
+            <li>
+              <h3>Gerenciar Usuário</h3>
+              <ul>
+                <li><a class="" href="cadastrar_colaborador.html">Novo Usuário</a></li>
+                <li><a class="" href="lista_colaborador.html">Relação de Usuários</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Agendamentos</h3>
+              <ul>
+                <li><a class="" href="novo_agendamento.html">Novo Agendamento</a></li>
+                <li><a class="active" href="lista_agendamento.html">Relação de Agendamentos</a></li>
+                <li><a class="" href="agendamento_cancelado.html">Agendamentos Cancelados</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Gerenciar Exames</h3>
+              <ul>
+                <li><a class="" href="relacao_exames.html">Relação de Exames</a></li>
+                <li><a class="" href="relacao_exames_emitidos.html">Relação de Exames Emitidos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- CONTENT DA SEÇÃO GERENCIAR -->
+      <div class="body-gerenciar">
+
+        <!-- TITULO DA SEÇÃO -->
+        <div class="title">
+          <h3>Alterar Agendamento</h3>
+        </div>
+
+        <!-- CALENDÁRIO -->
+        <div class="calendario-info">
+          <div class="calendario">
+            <div class="header-calendario">
+              <h3>Calendário</h3>
+              <div class="mes_ano">
+                <select id="mes">
+                  <option value="0" selected></option>
+                  <option value="-1">Janeiro</option>
+                  <option value="0">Fevereiro</option>
+                  <option value="1">Março</option>
+                  <option value="2">Abril</option>
+                  <option value="3">Maio</option>
+                  <option value="4">Junho</option>
+                  <option value="5">Julho</option>
+                  <option value="6">Agosto</option>
+                  <option value="7">Setembro</option>
+                  <option value="8">Outubro</option>
+                  <option value="9">Novembro</option>
+                  <option value="10">Dezembro</option>
+                </select>
+                <input id="ano" type="number" name="" value="">
+              </div>
+
+            </div>
+            <div class="body-calendario">
+              <table id="table-calendario" class="table-calendario">
+
+              </table>
+            </div>
+
+            <div class="footer-calendario">
+              <button id="btn-calendario" type="button" name="button"><i class='fa fa-chevron-down' aria-hidden='true'></i></button>
+            </div>
+          </div>
+          <div class="info-dia">
+            <div class="header-info-dia">
+              <h3>Informação Agendamento</h3>
+            </div>
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- FORM DE ALTERAR AGENDAMENTO -->
+        <div class="form-group">
+
+          <form id="form" class="" action="" method="post">
+
+            <!-- GRUPO COM INFORMAÇÕES SOBRE O AGENDAMENTO -->
+            <div class="info-agendamento info">
+
+              <div class="title2">
+                <h3>Informações do Agendamento</h3>
+              </div>
+
+              <div class="group-input2">
+                <div class="group-input width-30">
+                  <label for="numero-processo">Número do processo</label>
+                  <input type="text" name="numero-processo" value="" maxlength="100">
+                </div>
+                <div class="group-input width-30">
+                  <label for="">Data Agendamento</label>
+                  <select class="" name="data">
+                    <option value="">Selecione</option>
+                  </select>
+                </div>
+                <div class="group-input width-30">
+                  <label for="">Horário</label>
+                  <select class="" name="horario">
+                    <option value="">Selecione</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="group-input2">
+                <div class="group-input width-30">
+                  <label for="Id-Agendamento">Id do Agendamento</label>
+                  <input type="text" name="Id-Agendamento" value="" maxlength="100">
+                </div>
+                <div class="group-input width-65">
+                  <label for="agendado-por">Agendado Por:</label>
+                  <input type="text" name="agendado-po" value="" maxlength="30">
+                </div>
+              </div>
+            </div>
+
+
+            <!-- GRUPO COM INFORMAÇÕES DA GENITORA -->
+            <div class="info-genitora info">
+              <div class="title2">
+                <h3>Informações da Genitora</h3>
+              </div>
+              <div class="group-input2">
+                <div class="group-input width-70">
+                  <label for="nome-genitora">Nome da genitora</label>
+                  <input type="text" name="nome-genitora" value="" maxlength="30">
+                </div>
+                <div class="group-input width-25">
+                  <label for="rg-genitora">RG genitora</label>
+                  <input type="text" name="rg-genitora" value="" maxlength="14">
+                </div>
+              </div>
+
+              <div class="group-input2">
+
+                <div class="group-input width-35">
+                  <label for="cert-nascimento">Certidão de nascimento</label>
+                  <input type="email" name="cert-nascimento" value="" maxlength="60">
+                </div>
+                <div class="group-input width-60">
+                  <label for="cid-mun">Cidade / Município</label>
+                  <input type="text" name="cid-mun" value="" maxlength="200">
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- GRUPO COM INFORMAÇÕES DO SUPOSTO PAI OU REPRESENTANTE -->
+            <div class="info-supostoPai-representante info">
+
+              <div class="title2">
+                <h3>Informações do suposto pai ou Representante ( 1 )</h3>
+                <button class="btn-mais-supostoPai-representante" type="button" name="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                <button class="btn-menos-supostoPai-representante" type="button" name="button"><i class='fa fa-minus-circle' aria-hidden='true'></i></button>
+              </div>
+
+              <div class="group-input2 ">
+                <div class="group-input width-95">
+                  <label for="nome_Spai-Repr">Nome do suposto pai / Representante</label>
+                  <input type="text" name="nome_Spai-Repr" value="" maxlength="30">
+                </div>
+              </div>
+
+              <div class="group-input2 ">
+                <div class="group-input width-45">
+                  <label for="opcaorepr">opcao repre</label>
+                  <select class="" name="opcaorepr">
+                    <option value="" selected>Selecione</option>
+                    <option value="">Suposto pai</option>
+                    <option value="">Representante</option>
+                  </select>
+                </div>
+                <div class="group-input width-50">
+                  <label for="rg_Spai-Repr">RG suposto pai / Representante</label>
+                  <input type="text" name="rg_Spai-Repr" value="" maxlength="25">
+                </div>
+              </div>
+            </div>
+
+            <div class="group-button">
+              <button class="btn-submit btn-agendar" type="button" name="agendar">Finalizar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODAL PRA ALERTA DE ALTERAÇÃO  -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content width-40">
+        <div class="modal-header">
+          <span class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+        </div>
+        <div class="modal-body">
+          <p>Alterado com Sucesso</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- LINK PARA JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- LINK PARA JAVASCRIPT DO MODAL -->
+    <script type="text/javascript" src="../../js/modal.js"></script>
+    <!-- LINK PARA JAVASCRIPT DO CALENDARIO -->
+    <script src="../../js/calendario.js"></script>
+    <!-- LINK PARA JAVASCRIPT PARTICULAR DE ALLTERAR AGENDAMENTO -->
+    <script src="../../js/alterar_agendamento.js"></script>
+
+  </body>
+
+</html>

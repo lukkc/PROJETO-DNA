@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DNA</title>
+
+    <!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+  	<link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+  	<!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOG IN -->
+  	<link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_in.css">
+  	<!-- FOLHA DE ESTILO DO MENU -->
+    <link rel="stylesheet" href="../../css/compartilhado/menu.css">
+    <!-- FOLHA DE ESTILO PARTICULAR DE LISTA DE AGENDAMENTOS CANCELADOS -->
+    <link rel="stylesheet" href="../../css/gerenciar_agendamento/lista_agendamentos_cancelados.css">
+    <!-- FOLHA DE ESTILO DOS ICONS -->
+  	<link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+  	<!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO -->
+    <header class="cabecalho">
+        <div class="logotipo">
+            <img src="../../img/dna.png" alt="">
+            <h1>DNA</h1>
+        </div>
+        <div class="usuario-logado">
+            <h2>Usuário:&nbsp;</h2>
+            <h2>Lucas alves</h2>
+        </div>
+        <div class="div-btn-sair">
+            <a href="#" class="btn-sair">Sair&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        </div>
+    </header>
+
+
+    <!-- SEÇÃO PARTICULAR DE AGENDAMENTOS CANCELADOS -->
+    <section class="gerenciar">
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="menu-toggle">
+          <div class="menu">
+              <div class="title-menu">
+                  <h3>Menu</h3>
+              </div>
+              <ul>
+                  <li>
+                      <h3>Gerenciar Usuário</h3>
+                      <ul>
+                          <li><a class="" href="cadastrar_colaborador.html">Novo Usuário</a></li>
+                          <li><a class="" href="lista_colaborador.html">Relação de Usuários</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <h3>Gerenciar Agendamentos</h3>
+                      <ul>
+                          <li><a class="" href="novo_agendamento.html">Novo Agendamento</a></li>
+                            <li><a class="" href="lista_agendamento.html">Relação de Agendamentos</a></li>
+                          <li><a class="active" href="agendamento_cancelado.html">Agendamentos Cancelados</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <h3>Gerenciar Exames</h3>
+                      <ul>
+                          <li><a class="" href="relacao_exames.html">Relação de Exames</a></li>
+                          <li><a class="" href="relacao_exames_emitidos.html">Relação de Exames Emitidos</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+
+      <!-- CONTENT DA SEÇÃO GERENCIAR -->
+      <div class="body-gerenciar">
+
+        <div class="title">
+            <h3>Agendamentos Cancelados</h3>
+        </div>
+
+        <div class="lista-agendamentos-cancelados">
+
+          <!-- BARRA DE PESQUISA -->
+          <div class="pesquisar">
+            <div class="">
+              <label for="">Data:</label>
+              <input id="searchData" type="search" name="" placeholder="Procure por data">
+            </div>
+            <div class="">
+              <label for="">Nome Genitora:</label>
+              <input id="searchNome" type="search" name="" placeholder="Procure por nome da genitora">
+            </div>
+          </div>
+
+          <!-- LISTA COM OS AGENDAMENTOS CANCELADOS -->
+          <ul>
+            <li class="agendamento-cancelado">
+              <div class="width-55">
+                <div class="status">
+                  <label>Status: </label>
+                  <p>Cancelado</p>
+                </div>
+                <div class="">
+                  <label>Nº Processo: </label>
+                  <p>123123123</p>
+                </div>
+                <div class="">
+                  <label>ID Agendamento: </label>
+                  <p>123123123</p>
+                </div>
+                <div class="">
+                  <label>Data: </label>
+                  <p class="p-data">13/12/3123</p>
+                </div>
+                <div class="">
+                  <label>Horário: </label>
+                  <p>23:12:03</p>
+                </div>
+                <div class="">
+                  <label>Nome Genitora: </label>
+                  <p class="p-nome">Maria da silva</p>
+                </div>
+                <div class="">
+                  <label>RG Genitora: </label>
+                  <p>123123123123</p>
+                </div>
+
+              </div>
+              <div class="width-45">
+                  <div class="">
+                    <label for="">Cancelado Por:</label>
+                    <p>asdf asdf asdf asdf asdf asdf</p>
+                  </div>
+                  <div class="">
+                    <label for="">Data Cancelado:</label>
+                    <p class="p-data">12/12/0012</p>
+                  </div>
+                  <div class="">
+                    <label for="">Hora Cancelado:</label>
+                    <p>12:12:12</p>
+                  </div>
+                  <div class="descricao">
+                    <label for="">Descrição:</label>
+                    <textarea name="name" rows="8" cols="80" disabled="">
+
+                    </textarea>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINK PARA O JQUERY -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<!-- LINK PARA JAVASCRIPT PARTICULAR DE AGENDAMENTOS CANCELADOS -->
+    <script type="text/javascript" src="../../js/agendamentos_cancelados.js"></script>
+
+  </body>
+</html>

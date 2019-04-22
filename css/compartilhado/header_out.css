@@ -1,0 +1,21 @@
+#Logo {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  height: 40px;
+  padding: 5px 40px;
+  background-color: #ebebeb;
+}
+
+#Logo img {
+  height: 30px;
+}
+
+#Logo h1 {
+  font-size: 18px;
+  margin-left: 20px;
+  color: #273f57;
+}

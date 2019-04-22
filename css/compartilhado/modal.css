@@ -1,0 +1,71 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    padding-bottom: 20px;
+    border-radius: 3px;
+}
+
+.modal-content>.modal-header {
+    height: 30px;
+    width: 100%;
+}
+
+.modal-content>.modal-body {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.modal-content>.modal-body>p {
+    color: #3a8a17;
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal-content>.modal-body>p.danger {
+    color: #df0000;
+}
+
+.modal-content>.modal-body>p.default {
+    color: #273f57;
+}
+
+.modal-header>.close {
+    color: #273f57;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.modal-header>.close:hover, .modal-header>.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}

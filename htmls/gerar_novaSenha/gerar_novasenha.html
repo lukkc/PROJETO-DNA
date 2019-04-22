@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+
+	<!-- FOLHA DE ESTILO COM ESTILOS COMPARTILHADOS -->
+	<link rel="stylesheet" href="../../css/compartilhado/base_compartilhado.css">
+	<!-- FOLHA DE ESTILO DO HEADER QUANDO O USUARIO ESTÁ EM LOGOUT -->
+	<link rel="stylesheet" type="text/css" href="../../css/compartilhado/header_out.css">
+	<!-- FOLHA DE ESTILO DO MODAL -->
+	<link rel="stylesheet" href="../../css/compartilhado/modal.css">
+	<!-- FOLHA DE ESTILO PARTICULAR DE GERAR NOVA SENHA -->
+	<link rel="stylesheet" type="text/css" href="../../css/gerar_novaSenha/gerar_novasenha.css">
+	<!-- FOLHA DE ESTILO DOS ICONS -->
+	<link rel="stylesheet" href="../../css/compartilhado/font-awesome.min.css">
+	<!-- LINK PARA O ESTILO DE FONT ROBOTO -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title></title>
+</head>
+
+<body>
+	<!--SEÇÃO HEADER ONDE FICA O NOME DA EMPRESA E LOGO-->
+	<header id="Logo">
+		<img src="../../img/dna.png">
+		<h1>DNA</h1>
+	</header>
+
+	<!--SEÇÃO PARA GERAR UMA NOVA SENHA-->
+	<section id="gerar-novasenha" class="flex-column">
+		<h2>Escolher Nova Senha</h2>
+
+		<!-- INFORMAÇÕES SOBRE OS PASSOS PARA GERAR A NOVA SENHA -->
+		<div class="info-token">
+			<div class="passos-senha">
+				<p>PASSO 3</p>
+			</div>
+			<div class="msg-senha">
+				<p>Pronto, Agora escolha sua nova senha.</p>
+				<p>Finalizamos. <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+			</div>
+		</div>
+
+		<form id="form" class="flex-column" method="post" action="">
+
+			<!-- {% if erro %}
+				<p style="text-align: center; color: #c9302c;">{{erro}}</p>
+			{% endif %} -->
+			<div class="group-input">
+				<label for="email">Informe seu Email</label>
+				<span class="icon-input"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+				<input id="" type="email" name="email" value="">
+				<span class="error"></span>
+			</div>
+			<div class="group-input">
+				<label for="password">Informe a nova senha</label>
+				<span class="icon-input"><i class="fa fa-key senha" aria-hidden="true"></i></span>
+				<input id="" type="password" name="senha" value="">
+				<span class="error"></span>
+			</div>
+			<div class="group-input">
+				<label for="password">Confirme a nova senha</label>
+				<span class="icon-input"><i class="fa fa-key confirmarSenha" aria-hidden="true"></i></span>
+				<input id="" type="password" name="confirmarSenha" value="">
+				<span class="error"></span>
+			</div>
+			<button id="btn-salvar" type="button" class="btn-submit" name="salvar">Salvar</button>
+		</form>
+
+	</section>
+
+
+	<!-- MODAL PARA ALERTA DE CONFIRMAÇÃO DE SENHA ATUAIZADA -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content width-40">
+			<div class="modal-header">
+				<span class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+			</div>
+			<div class="modal-body">
+				<p>Senha atualizada com sucesso</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- LINK PARA JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- LINK PARA JAVASCRIPT DO MODAL -->
+	<script type="text/javascript" src="../../js/modal.js"></script>
+	<!-- LINK PARA JAVASCRIPT PARTICULAR DE GERAR NOVA SENHA -->
+	<script type="text/javascript" src="../../js/gerar_novaSenha.js"></script>
+
+</body>
+
+</html>

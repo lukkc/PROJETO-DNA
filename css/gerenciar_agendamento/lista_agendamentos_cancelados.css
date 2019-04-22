@@ -1,0 +1,147 @@
+.title {
+    position: fixed;
+    width: 79%;
+    z-index: 3;
+}
+
+.menu {
+    position: fixed;
+    z-index: 1;
+}
+
+.pesquisar {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: 79%;
+    height: 35px;
+    padding: 0 20px;
+    margin-top: 1px;
+    background-color: #273f57;
+}
+
+.pesquisar>div>label {
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.pesquisar>div>input {
+    height: 24px;
+    margin-left: 5px;
+    border: none;
+    font-size: 13px;
+}
+
+.pesquisar>div:nth-child(1)>input {
+    width: 150px;
+}
+
+.pesquisar>div:nth-child(2)>input {
+    width: 400px;
+}
+
+.pesquisar>button {
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    padding: 2px 5px;
+    border-color: #273f57;
+    border-radius: 3px;
+    background-color: #ebebeb;
+    color: #273f57;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lista-agendamentos-cancelados {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.lista-agendamentos-cancelados>ul {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    margin-top: 40px;
+}
+
+.lista-agendamentos-cancelados>ul>li.agendamento-cancelado {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    position: relative;
+    width: 95%;
+    height: 250px;
+    margin-top: 20px;
+    border: 2px solid #273f57;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+.lista-agendamentos-cancelados>ul>li.agendamento-cancelado>div {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    height: ;
+    padding: 15px;
+}
+
+.lista-agendamentos-cancelados>ul>li.agendamento-cancelado>div>div {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+}
+
+.lista-agendamentos-cancelados>ul>li.agendamento-cancelado>div>div>p {
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.status>p {
+    color: #df0000;
+}
+
+.descricao {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.descricao>textarea {
+    resize: none;
+    padding: 10x;
+    border: 1px solid #273f57;
+    border-radius: 3px;
+}
+
+.descricao>textarea:disabled {
+    background-color: #fff;
+}
